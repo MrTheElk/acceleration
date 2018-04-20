@@ -1,0 +1,147 @@
+\documentclass[twocolumn,showpacs,preprintnumbers,nofootinbib,prd,
+superscriptaddress,10pt]{revtex4-1}
+
+\usepackage{amsmath,amssymb}
+\usepackage[normalem]{ulem}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{psfrag}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[utf8]{inputenc}
+
+\graphicspath{{./figures/}}
+% 
+\allowdisplaybreaks[4]
+
+\newcommand{\sub}[1]{_{\text{#1}}}
+\newcommand{\super}[1]{^{\text{#1}}}
+\newcommand{\uvec}[1]{\bm{\hat{#1}}}
+\newcommand{\dvec}[1]{\dot{\bm{#1}}}
+\newcommand{\ddvec}[1]{\ddot{\bm{#1}}}
+\newcommand{\dddvec}[1]{\dddot{\bm{#1}}}
+\newcommand{\duvec}[1]{\dot{\bm{\hat{#1}}}}
+\newcommand{\dduvec}[1]{\ddot{\bm{\hat{#1}}}}
+\newcommand{\ddduvec}[1]{\dddot{\bm{\hat{#1}}}}
+\newcommand{\ord}[1]{\mathcal{O} \left( #1 \right)}
+
+\newcommand{\ak}[1]{{\textcolor{Red}{\sf{[AK: #1]}} }}
+
+\begin{document}
+
+\title{Peculiar acceleration effects on stellar-origin gravitational wave binaries}
+
+\date{\today}
+
+\author{Nicola Tamanini}
+\affiliation{Max-Planck-Institut für Gravitationsphysik, Albert-Einstein-Institut, Am Mühlenberg 1,
+14476 Potsdam-Golm, Germany}
+\affiliation{Laboratoire Astroparticule et Cosmologie, CNRS UMR 7164, Université Paris-Diderot, 10
+rue Alice Domon et Léonie Duquet, 75013 Paris, France}
+
+\author{Antoine Klein}
+\affiliation{CNRS, UMR 7095, Institut d'Astrophysique de Paris, 98 bis Bd Arago, 75014 Paris, 
+France}
+
+\author{Enrico Barausse}
+\affiliation{CNRS, UMR 7095, Institut d'Astrophysique de Paris, 98 bis Bd Arago, 75014 Paris, 
+France}
+
+\author{Chiara Caprini}
+\affiliation{Laboratoire Astroparticule et Cosmologie, CNRS UMR 7164, Université Paris-Diderot, 10
+rue Alice Domon et Léonie Duquet, 75013 Paris, France}
+
+\author{Camille Bonvin}
+\affiliation{D\'{e}partment de Physique Th\'{e}orique, Universit\'{e} de Gen\`{e}ve,
+24 quai Ernest-Ansermet, 1211 Gen\`{e}ve 4, Switzerland}
+
+
+
+\begin{abstract}
+We look at peculiar acceleration.
+\end{abstract}
+
+
+\pacs{
+ 04.30.-w, %Gravitational waves
+ 04.30.Tv %Gravitational-wave astrophysics
+}
+
+\maketitle
+
+
+\section{Introduction}
+
+
+\section{Theory}
+
+
+\subsection{Peculiar acceleration effects on gravitational waveforms}
+
+The gravitational radiation emitted by a binary system is affected by the redshift
+of the source in the detector frame. The GW observed by the detector takes on the following form in the 
+source frame:
+\begin{align}
+ h(t) &= \frac{G M \nu}{d_C c^2} \sum_{n \geq 0} A_n e^{-i n \phi} + c.c., \\
+  \dot{\phi} &= \frac{c^3}{G M} y^3,
+\end{align}
+where $M$ is the intrinsic total mass of the system, $d_C$ is the comoving distance 
+from the source to the detector, $\phi$ is its orbital phase, and $y = (G M \omega / c^3)^{1/3}$ is a post-Newtonian parameter used to describe the system. In the presence of a redshift between the source and the detector, the phase evolution equation is affected as
+\begin{align}
+ \dot{\phi}\sub{obs} &= \frac{1}{1+z} \frac{c^3}{G M} y^3.
+\end{align}
+
+The effect of the redshift can be absorbed into the total mass, which becomes the \emph{redshifted mass} $M_z = (1+z) M$. The amplitude of the GW has then to be 
+corrected accordingly. One way of doing this is to use the luminosity distance
+$d_L = (1+z) d_C$. The GW in the detector frame thus becomes
+\begin{align}
+ h(t) &= \frac{G M_z \nu}{d_L c^2} \sum_{n \geq 0} A_n e^{-i n \phi} + c.c., \\
+  \dot{\phi} &= \frac{c^3}{G M_z} y^3.
+\end{align}
+
+In the presence of a peculiar acceleration, this picture changes as the redshift becomes
+a function of time.
+
+
+
+
+
+
+\subsection{Peculiar accelerations from astrophysical origin}
+
+
+\section{Measurement errors}
+
+
+
+
+\section{Astrophysical populations}
+
+
+
+
+
+\section{Results}
+
+
+
+
+
+\section{Conclusion}
+
+
+
+
+\acknowledgments
+
+
+A.~K. and E.~B. are supported by H2020-MSCA-RISE-2015 Grant No. StronGrHEP-690904.
+This work was 
+supported by the Centre National d'{\'E}tudes Spatiales.
+
+
+
+\bibliography{accel-paper}
+
+\end{document}
